@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="balance-section">
+        <img src="leafy.jpg" alt="Balance Icon" class="balance-icon">
+        <span class="balance-display">$LEAF Balance: <span id="balance">0</span></span>
+    </div>
+
+    <div class="game-balance-section">
+        <span class="balance-display">Current Game Balance: <span id="game-balance">0</span></span>
+    </div>
+    
+    <button id="play-btn" class="play-btn">Play</button>
+    
+    <div id="game-area" class="game-area hidden">
+        <span id="timer">30s</span>
+        <div id="game-content"></div>
+    </div>
+
+    <button id="refer-btn" class="refer-btn">Refer</button>
+    
+    <div id="ton-connect" class="ton-connect"></div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <script>
+    const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+        manifestUrl: 'https://<https://gameleafy.netlify.app>/tonconnect-manifest.json',
+        buttonRootId: 'ton-connect'
+    });
+</script>
+</body>
+</html>

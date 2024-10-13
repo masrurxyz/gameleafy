@@ -1,0 +1,7 @@
+{
+    "url": "<https://gameleafy.netlify.app>",                        // required
+    "name": "<leafy>",                      // required
+    "iconUrl": "<https://ibb.co.com/9GMB18L>",               // required
+    "termsOfUseUrl": "<terms-of-use-url>",     // optional
+    "privacyPolicyUrl": "<privacy-policy-url>" // optional
+}
